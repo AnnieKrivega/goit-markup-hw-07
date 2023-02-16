@@ -96,7 +96,6 @@ p{
     padding-bottom: 24px;
 }
 .container{
-    max-width: 1158px;
     padding-left: 15px;
     padding-right: 15px;
     margin-left: auto;
@@ -194,14 +193,14 @@ p{
 }
 
 .section-link {
-    width: 1440px;
+    width: 100%;
     background-image: linear-gradient(rgba(46, 47, 66, 0.7),rgba(46, 47, 66, 0.7)),
     url(../images/people-office-bg.jpg);
     background-repeat: no-repeat;
-    background-position: top;
-    padding-top: 188px;
-    padding-bottom: 188px;
-    margin: auto;
+    background-size: cover;
+    padding-top: 112px;
+    padding-bottom: 112px;
+    margin: 0 auto;
 }
 .section-container{
     padding-left: 15px;
@@ -209,15 +208,14 @@ p{
     justify-items: center;
 }
 .section-link-title {
-    max-width: 500px;
-    font-size: 56px;
+    max-width: 320px;
+    font-size: 32px;
     line-height: 1.1;
     text-align: center;
     letter-spacing: 0.02em;
     color: #FFFFFF;
-    margin-bottom: 48px;
-    margin: 0 auto;
-    margin-bottom: 48px;
+    margin: auto;
+    margin-bottom: 72px;
 }
 .section-link-btn {
     border: 1px solid transparent;
@@ -243,6 +241,7 @@ p{
 .feature {
     padding-top: 120px;
     padding-bottom: 8px;
+    display: none;
 }
 .about-feature-list {
     display: flex;
@@ -272,7 +271,8 @@ p{
 .hero-container{
     padding-left: 15px;
     padding-right: 15px;
-    width: 1158px;
+    padding-top: 96px;
+    padding-bottom: 96px;
 }
 .hero-title {
     font-size: 36px;
@@ -285,18 +285,23 @@ p{
 }
 .hero-list {
     display: flex;
-    gap: 24px;
+    flex-wrap: wrap;
+    gap: 72px;
+    max-width: 100%;
+    height: auto;
+    width: 100%;
 }
 .hero-item {
+width: 100%;
 }
 .hero-suptitle {
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 1.2;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.1;
     letter-spacing: 0.02em;
     color: #2E2F42;
-    width: 264px;
-    height: 24px;
+    text-align: center;
+    text-transform: capitalize;
     margin-bottom: 8px;
 }
 .hero-subtitle {
@@ -304,12 +309,11 @@ p{
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #434455;
-    width: 264px;
-    height: 72px;
 }
 .photo-title{
     padding-top: 120px;
     padding-bottom: 120px;
+    display: none;
 }
 .photo-container{
 }
@@ -341,6 +345,7 @@ p{
 }
 
 .team-title {
+    font-weight: 700;
     font-size: 36px;
     line-height: 1.11;
     text-align: center;
@@ -354,6 +359,10 @@ p{
     gap: 24px;
 }
 .team-wrap{
+    margin-left: auto;
+    margin-right: auto;
+    width: 264px;
+    text-align: center;
     background: #FFFFFF;
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
     border-radius: 0px 0px 4px 4px;
@@ -366,7 +375,6 @@ p{
     padding-bottom: 32px;
 }
 .team-suptitle {
-    font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
     text-align: center;
@@ -375,6 +383,7 @@ p{
     margin-bottom: 8px;
 }
 .team-subtitle {
+    font-weight: 400;
     font-size: 16px;
     line-height: 1.5;
     text-align: center;
@@ -384,16 +393,14 @@ p{
 }
 .team-soc-list {
     display: flex;
-    justify-content: center;
-    gap: 24px;
+    justify-content: space-around;
 }
 .team-soc-item {
-    width: 40px;
-    height: 40px;
+
 }
 .team-soc-link {
-    width: 100%;
-    height: 100%;
+    width: 40px;
+    height: 40px;
     background: #4D5AE5;
     display: flex;
     align-items: center;
@@ -404,8 +411,8 @@ p{
 .team-soc-icon{
 }
 .customers {
-    padding-top: 130px;
-    padding-bottom: 120px;
+    padding-top: 96px;
+    padding-bottom: 96px;
 }
 .about-customers {
     font-family: 'Roboto';
@@ -419,14 +426,13 @@ p{
     color: #2E2F42;
     margin-bottom: 72px;
 }
-.container {
-}
 .about-customers-list {
     display: flex;
+    flex-wrap: wrap;
     gap: 24px;
 }
 .about-customers-item {
-    width: calc((100% - 120px) / 6);
+    width: calc((100% - 30px) / 2);
     height: 88px;
 }
 .about-customers-link {

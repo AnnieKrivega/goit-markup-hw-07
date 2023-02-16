@@ -1,3 +1,19 @@
 @media screen and (min-width: 768px) {
-    
+    .container {
+        max-width: 768;
+    }
+
+    .section-link {
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7),rgba(46, 47, 66, 0.7)),
+        url(../images/people-office-bg-3.jpg);
+    }
+
+    .customers {
+        padding-top: 96px;
+        padding-bottom: 96px;
+}
+
+.about-customers-item {
+    width: calc((100%-60px)/3);
+}
 }
