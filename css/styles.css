@@ -284,9 +284,6 @@ p{
     display: none;
 }
 .hero-list {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 72px;
     max-width: 100%;
     height: auto;
     width: 100%;
@@ -305,10 +302,12 @@ width: 100%;
     margin-bottom: 8px;
 }
 .hero-subtitle {
+    font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #434455;
+    margin-bottom: 72px;
 }
 .photo-title{
     padding-top: 120px;

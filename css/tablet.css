@@ -1,6 +1,6 @@
 @media screen and (min-width: 768px) {
     .container {
-        max-width: 768;
+        max-width: 768px;
     }
 
     .section-link {
@@ -11,6 +11,35 @@
     .customers {
         padding-top: 96px;
         padding-bottom: 96px;
+}
+
+.hero-list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+    .hero-item {
+        width: calc((100%-24px)/2);
+        margin-bottom: 0;
+
+}
+
+    .hero-suptitle {
+        font-weight: 700;
+        font-size: 36px;
+        text-align: left;
+        line-height: 1.11;
+        letter-spacing: 0.02em;
+        text-transform: capitalize;
+        color: #2E2F42;
+}
+
+    .hero-subtitle {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: 0.02em;
+        color: #434455;
 }
 
 .about-customers-item {
